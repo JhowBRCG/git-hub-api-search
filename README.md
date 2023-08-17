@@ -47,7 +47,7 @@ The project is fully responsive the for most screen devices.
 
 <div>
 
-<h3 align = 'center'><a href = 'https://jhowbrcg.github.io/newsletter-sign-up-form/'>See the project</a></h3>
+<h3 align = 'center'><a href = 'https://jhowbrcg.github.io/git-hub-api-search/'>See the project</a></h3>
 
 <div align= 'left'>
 
