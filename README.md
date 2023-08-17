@@ -1,4 +1,4 @@
-<h1 align = "center"> GitHub user search API </h1>
+<h1 align = "center"> GitHub API Search </h1>
 
 <br>
 
