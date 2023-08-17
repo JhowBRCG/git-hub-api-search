@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", monospace;
+  color: #fff;
+}
+
+html {
+  font-size: 65.2%;
+}
+
+body {
+  background: rgb(20, 28, 47);
+  padding: 1rem;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(31, 42, 72);
+  border-radius: 1rem;
+  position: relative;
+  padding: 1rem 1rem 1rem 2rem;
+}
+.header__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header__content .header__input {
+  width: 100%;
+  display: inline-block;
+}
+.header__content .header__input::-moz-placeholder {
+  color: #fff;
+}
+.header__content .header__input::placeholder {
+  color: #fff;
+}
+.header__content i {
+  color: rgb(0, 121, 254);
+}
+.header__button {
+  background: rgb(0, 121, 254);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: all 200ms ease-in;
+}
+.header__button:hover {
+  background: #fff;
+  color: rgb(31, 42, 72);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile {
+  margin-top: 1rem;
+  background: rgb(31, 42, 72);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.profile h3 {
+  text-align: center;
+}
+.profile__header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.profile__header .profile__img {
+  display: block;
+  max-width: 100px;
+  border-radius: 50%;
+}
+.profile__header .profile__name {
+  margin-bottom: 0.6rem;
+}
+.profile__header .profile__username {
+  font-size: 1.3rem;
+  color: rgb(0, 121, 254);
+  margin-bottom: 1rem;
+}
+.profile__header .profile__bio {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.profile__info {
+  background: rgb(20, 28, 47);
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.profile__info .profile__followers,
+.profile__info .profile__following {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.profile__info .profile__followers-item,
+.profile__info .profile__following-item {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.repositories {
+  margin-top: 1rem;
+  background: rgb(31, 42, 72);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.repositories h2 {
+  text-align: center;
+}
+.repositories__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.repositories__list li {
+  margin-bottom: 1rem;
+  background: rgb(20, 28, 47);
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 100ms linear;
+}
+.repositories__list li:hover {
+  box-shadow: 0 0 10px rgb(0, 121, 254);
+}
+.repositories__list a {
+  display: block;
+  padding: 2rem;
+}
+.repositories__list .repositories__icons {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.events {
+  margin-top: 1rem;
+  background: rgb(31, 42, 72);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.events h2 {
+  text-align: center;
+}
+.events ul {
+  margin-top: 2rem;
+}
+.events ul li {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: rgb(20, 28, 47);
+  border-radius: 1rem;
+  text-align: center;
+}
+.events ul span {
+  color: rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=style.css.map */

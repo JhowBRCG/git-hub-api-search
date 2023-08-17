@@ -1,0 +1,41 @@
+@use "variables" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: $bg-card-color;
+  border-radius: $radius;
+  position: relative;
+  padding: 1rem 1rem 1rem 2rem;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    .header__input {
+      width: 100%;
+      display: inline-block;
+
+      &::placeholder {
+        color: $white-color;
+      }
+    }
+
+    i {
+      color: $blue-color;
+    }
+  }
+
+  &__button {
+    background: $blue-color;
+    padding: 1rem 2rem;
+    border-radius: $radius;
+    transition: all 200ms ease-in;
+    &:hover {
+      background: $white-color;
+      color: $bg-card-color;
+    }
+  }
+}

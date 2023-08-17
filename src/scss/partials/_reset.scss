@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  list-style: none;
+  text-decoration: none;
+  font-family: $main-font;
+  color: $white-color;
+}
+
+html {
+  font-size: 65.2%;
+}
+
+body {
+  background: $bg-color;
+  padding: 1rem;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+main {
+  padding-top: 4rem;
+}

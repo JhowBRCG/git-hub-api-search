@@ -1,0 +1,29 @@
+@use "variables" as *;
+
+.events {
+  margin-top: 1rem;
+  background: $bg-card-color;
+  border-radius: $radius;
+  padding: 2rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 2rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      padding: 1rem;
+      font-size: 1.5rem;
+      background: $bg-color;
+      border-radius: $radius;
+      text-align: center;
+    }
+
+    span {
+      color: $white-opacity-color;
+    }
+  }
+}

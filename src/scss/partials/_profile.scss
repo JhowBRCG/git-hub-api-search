@@ -1,0 +1,62 @@
+@use "variables" as *;
+.profile {
+  margin-top: 1rem;
+  background: $bg-card-color;
+  border-radius: $radius;
+  padding: 2rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .profile__img {
+      display: block;
+      max-width: 100px;
+      border-radius: 50%;
+    }
+
+    .profile__name {
+      margin-bottom: 0.6rem;
+    }
+
+    .profile__username {
+      font-size: 1.3rem;
+      color: $blue-color;
+      margin-bottom: 1rem;
+    }
+
+    .profile__bio {
+      font-size: 1.5rem;
+      color: $white-opacity-color;
+    }
+  }
+
+  &__info {
+    background: $bg-color;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 3rem;
+    padding: 1rem;
+    border-radius: $radius;
+
+    .profile__followers,
+    .profile__following {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      color: $white-opacity-color;
+    }
+
+    .profile__followers-item,
+    .profile__following-item {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}

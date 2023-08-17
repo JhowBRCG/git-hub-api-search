@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+.repositories {
+  margin-top: 1rem;
+  background: $bg-card-color;
+  border-radius: $radius;
+  padding: 2rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    li {
+      margin-bottom: 1rem;
+      background: $bg-color;
+      border-radius: $radius;
+      text-align: center;
+      transition: all 100ms linear;
+
+      &:hover {
+        box-shadow: 0 0 10px $blue-color;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 2rem;
+    }
+
+    .repositories__icons {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+    }
+  }
+}
