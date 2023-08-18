@@ -1,31 +1,33 @@
 
 const screen = {
-    userProfile: document.querySelector('.profile'),
+    userProfile: document.querySelector('.wrapper-sections'),
     renderUser(user) {
-        this.userProfile.innerHTML = `<div class="profile__header">
-                         <img
-                         src="${user.avatarUrl}"
-                         alt="User profile Image"
-                         class="profile__img"
-                         />
-                         <div>
-                           <h1 class="profile__name">${user.name ?? "Do not have a name"}</h1>
-                           <p class="profile__username">@${user.userName}</p>
-                           <p class="profile__bio">
-                               ${user.bio ?? "Do not have a bio"}
-                           </p>
-                         </div>
-                     </div>
-                     <div class="profile__info">
-                         <ul>
-                           <li class="profile__followers">Followers</li>
-                           <li class="profile__followers-item">${user.followers}</li>
-                         </ul>
-                         <ul>
-                           <li class="profile__following">Following</li>
-                           <li class="profile__following-item">${user.following}</li>
-                         </ul>
-                     </div> `;
+        this.userProfile.innerHTML = `<section class = "profile">
+                                        <div class="profile__header">
+                                          <img
+                                          src="${user.avatarUrl}"
+                                          alt="User profile Image"
+                                          class="profile__img"
+                                          />
+                                          <div>
+                                            <h1 class="profile__name">${user.name ?? "Do not have a name"}</h1>
+                                            <p class="profile__username">@${user.userName}</p>
+                                            <p class="profile__bio">
+                                                ${user.bio ?? "Do not have a bio"}
+                                            </p>
+                                          </div>
+                                      </div>
+                                      <div class="profile__info">
+                                          <ul>
+                                            <li class="profile__followers">Followers</li>
+                                            <li class="profile__followers-item">${user.followers}</li>
+                                          </ul>
+                                          <ul>
+                                            <li class="profile__following">Following</li>
+                                            <li class="profile__following-item">${user.following}</li>
+                                          </ul>
+                                      </div>
+                                    </section> `;
 
         let repositoriesItens = "";
          user.repositories.forEach(repo => {
@@ -40,10 +42,12 @@ const screen = {
          })
         
         if(user.repositories.length > 0) {
-            document.querySelector('.repositories').innerHTML = `<h2>Repositories</h2>
-                                                                 <ul class="repositories__list">
-                                                                  ${repositoriesItens}
-                                                                </ul>`;
+                                this.userProfile.innerHTML += ` <section class = "repositories">
+                                                                  <h2>Repositories</h2>
+                                                                  <ul class="repositories__list">
+                                                                    ${repositoriesItens}
+                                                                  </ul>
+                                                                </section>`;
         };
 
         let eventsItens = "";
@@ -57,17 +61,17 @@ const screen = {
           eventsItens += `<li>${repoName} - <span>${repoMessage}</span></li>`
         });
 
-        if(user.events.length > 0) {
-          document.querySelector('.events').innerHTML = `<h2>Events</h2>
-                                                         <ul class="events__list">
-                                                           ${eventsItens}
-                                                         </ul>`;
+        if(eventsFilter.length > 0) {
+          this.userProfile.innerHTML += `<section class = "events">
+                                        <h2>Events</h2>
+                                         <ul class="events__list">
+                                            ${eventsItens}
+                                          </ul>
+                                        </section>`;
         }
     },
     renderNotFound() {
-      this.userProfile.innerHTML = "<h3>User not found<h3>";
-      document.querySelector('.repositories').innerHTML = "";
-      document.querySelector('.events').innerHTML = "";
+      this.userProfile.innerHTML = "<h3>User not found</h3>";
     }
 };
 
