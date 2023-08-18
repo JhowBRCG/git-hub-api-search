@@ -34,7 +34,7 @@ The project includes the following three sections:
 
 ### 📱 Responsive
 
-The project is fully responsive the for most screen devices.
+The project is fully responsive for the most screen devices.
 
 <br>
 <br>
