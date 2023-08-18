@@ -35,6 +35,11 @@ main {
   padding-top: 4rem;
 }
 
+h3 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -83,9 +88,6 @@ main {
   background: rgb(31, 42, 72);
   border-radius: 1rem;
   padding: 2rem;
-}
-.profile h3 {
-  text-align: center;
 }
 .profile__header {
   display: flex;
