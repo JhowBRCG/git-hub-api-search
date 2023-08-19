@@ -51,17 +51,15 @@ const screen = {
         };
 
         let eventsItens = "";
-        const eventsFilter = user.events.filter
-        (e => e.payload.commits !== undefined).slice(0,10);
-
-        eventsFilter.forEach(event => {
+        
+        user.events.forEach(event => {
           const repoName = event.repo.name;
           const repoMessage = event.payload.commits[0].message;
       
           eventsItens += `<li>${repoName} - <span>${repoMessage}</span></li>`
         });
 
-        if(eventsFilter.length > 0) {
+        if(user.events.length > 0) {
           this.userProfile.innerHTML += `<section class = "events">
                                           <h2>Events</h2>
                                           <ul class="events__list">
