@@ -16,8 +16,8 @@ const screen = {
                                                 ${user.bio ?? "Do not have a bio"}
                                             </p>
                                           </div>
-                                      </div>
-                                      <div class="profile__info">
+                                        </div>
+                                        <div class="profile__info">
                                           <ul>
                                             <li class="profile__followers">Followers</li>
                                             <li class="profile__followers-item">${user.followers}</li>
@@ -26,8 +26,8 @@ const screen = {
                                             <li class="profile__following">Following</li>
                                             <li class="profile__following-item">${user.following}</li>
                                           </ul>
-                                      </div>
-                                    </section> `;
+                                        </div>
+                                     </section> `;
 
         let repositoriesItens = "";
          user.repositories.forEach(repo => {
@@ -63,10 +63,10 @@ const screen = {
 
         if(eventsFilter.length > 0) {
           this.userProfile.innerHTML += `<section class = "events">
-                                        <h2>Events</h2>
-                                         <ul class="events__list">
-                                            ${eventsItens}
-                                          </ul>
+                                          <h2>Events</h2>
+                                          <ul class="events__list">
+                                              ${eventsItens}
+                                            </ul>
                                         </section>`;
         }
     },
