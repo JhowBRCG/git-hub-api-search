@@ -35,7 +35,7 @@ const screen = {
                                   <a href="${repo.html_url}" target ="_blank">
                                   ${repo.name}
                                  <div class="repositories__icons">
-                                  🍴${repo.forks} ⭐${repo.stargazers_count} 👀${repo.watchers} 👨‍💻${repo.language}
+                                  🍴${repo.forks} ⭐${repo.stargazers_count} 👀${repo.watchers} 👨‍💻${repo.language ?? "No languages"}
                                  </div>
                                   </a>
                                </li>`
