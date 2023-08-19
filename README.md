@@ -18,7 +18,7 @@ The project includes the following three sections:
 
   - User's image;
   - User's name;
-  - User's User Name;
+  - User's username;
   - User's following;
   - User's followers;
 
@@ -28,7 +28,7 @@ The project includes the following three sections:
 
 - #### 🧾 Events Section
 
-  The events section contains the last 10 events tha the user recently created.
+  The events section contains the last 10 events that the user recently created.
 
 <br>
 
